@@ -1,0 +1,6 @@
+*.wasm
+capsule
+*.tar.gz
+tmp
+.DS_Store
+dump.rdb
