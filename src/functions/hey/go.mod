@@ -3,7 +3,7 @@ module github.com/bots-garden/capsule-faas-demo/hey
 go 1.18
 
 require (
-	github.com/bots-garden/capsule/capsulemodule v0.0.0-20220811130424-72fd5964059b
+	github.com/bots-garden/capsule/capsulemodule v0.0.0-20220813055457-58259c3a7008
 	github.com/tidwall/gjson v1.14.2
 	github.com/tidwall/sjson v1.2.5
 )

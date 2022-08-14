@@ -1,4 +1,6 @@
 #!/bin/bash
+CAPSULE_REVERSE_PROXY_ADMIN_TOKEN="1234567890" \
+CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
 capsule \
    -mode=worker \
    -reverseProxy=http://localhost:8888 \
