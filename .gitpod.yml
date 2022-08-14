@@ -8,6 +8,11 @@ tasks:
       wget https://github.com/bots-garden/capsule/releases/download/${CAPSULE_VERSION}/capsule-${CAPSULE_VERSION}-linux-amd64.tar.gz
       sudo tar -zxf capsule-${CAPSULE_VERSION}-linux-amd64.tar.gz --directory /usr/local/bin
       rm capsule-${CAPSULE_VERSION}-linux-amd64.tar.gz
+
+      echo "💊 Installing capsule cli..."
+      wget https://github.com/bots-garden/capsule/releases/download/${CAPSULE_VERSION}/cc-${CAPSULE_VERSION}-linux-amd64.tar.gz
+      sudo tar -zxf cc-${CAPSULE_VERSION}-linux-amd64.tar.gz --directory /usr/local/bin
+      rm cc-${CAPSULE_VERSION}-linux-amd64.tar.gz
     init: |
       echo "🚀 ..."
 
