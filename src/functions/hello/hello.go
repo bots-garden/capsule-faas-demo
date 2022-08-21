@@ -29,10 +29,10 @@ func Handle(bodyReq string, headersReq map[string]string) (bodyResp string, head
       <body>
 				<section class="container">
 					<div>
-							<h1 class="title">👋 Hello World 🌍</h1>
-							<h2 class="subtitle">Served with 💜 by Capsule 💊</h2>
-							<h2 class="subtitle">` + message + `</h2>
-							<h2 class="subtitle">` + token + `</h2>
+						<h1 class="title">👋 Hello World 🌍</h1>
+						<h2 class="subtitle">Served with 💜 by Capsule 💊</h2>
+						<h2 class="subtitle">` + message + `</h2>
+						<h2 class="subtitle">` + token + `</h2>
 					</div>
 				</section>
       </body>
