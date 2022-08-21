@@ -22,7 +22,7 @@ tinygo build -o hey.wasm -scheduler=none -target wasi ./hey.go
 
 ```bash
 CAPSULE_REGISTRY_ADMIN_TOKEN="AZERTYUIOP" \
-cc publish \
+caps publish \
 -wasmFile=./src/functions/hello/hello.wasm -wasmInfo="this is the hello module" \
 -wasmOrg=demo -wasmName=hello -wasmTag=0.0.0 \
 -registryUrl=http://localhost:4999
@@ -30,7 +30,7 @@ cc publish \
 
 ```bash
 CAPSULE_REGISTRY_ADMIN_TOKEN="AZERTYUIOP" \
-cc publish \
+caps publish \
 -wasmFile=./src/functions/hey/hey.wasm -wasmInfo="this is the hey module" \
 -wasmOrg=demo -wasmName=hey -wasmTag=0.0.0 \
 -registryUrl=http://localhost:4999
@@ -76,7 +76,7 @@ cc publish \
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc deploy \
+caps deploy \
 -function=hello \
 -revision=orange \
 -downloadUrl=http://localhost:4999/demo/hello/0.0.0/hello.wasm \
@@ -101,7 +101,7 @@ Open the link (http://localhost:8888/functions/hello/orange) in a browser.
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc deploy \
+caps deploy \
 -function=hello \
 -revision=orange \
 -downloadUrl=http://localhost:4999/demo/hello/0.0.0/hello.wasm \
@@ -112,7 +112,7 @@ cc deploy \
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc deploy \
+caps deploy \
 -function=hello \
 -revision=orange \
 -downloadUrl=http://localhost:4999/demo/hello/0.0.0/hello.wasm \
@@ -127,7 +127,7 @@ Open the link (http://localhost:8888/functions/hello/orange) in a browser, and r
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc deploy \
+caps deploy \
 -function=hello \
 -revision=blue \
 -downloadUrl=http://localhost:4999/demo/hello/0.0.0/hello.wasm \
@@ -146,7 +146,7 @@ output:
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc deploy \
+caps deploy \
 -function=hello \
 -revision=green \
 -downloadUrl=http://localhost:4999/demo/hello/0.0.0/hello.wasm \
@@ -182,7 +182,7 @@ For example, we set the default revision to the blue revision=
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc set-default \
+caps set-default \
 -function=hello \
 -revision=blue
 ```
@@ -203,7 +203,7 @@ To change the default revision, use the same command with only changing the name
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc set-default \
+caps set-default \
 -function=hello \
 -revision=green
 ```
@@ -221,7 +221,7 @@ output:
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc unset-default \
+caps unset-default \
 -function=hello
 ```
 
@@ -239,7 +239,7 @@ You can un-deploy the revision of a function (and kill the related process):
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc un-deploy \
+caps un-deploy \
 -function=hello \
 -revision=green
 ```
@@ -257,7 +257,7 @@ To get all the deployed revisions, use the following command:
 ```bash
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
-cc worker
+caps worker
 ```
 
 output:
@@ -324,7 +324,7 @@ Look at the source code of the **`hey`** function (`./src/functions/hey/hey.go`)
 CAPSULE_WORKER_URL="http://localhost:9999" \
 CAPSULE_BACKEND="memory" \
 CAPSULE_WORKER_ADMIN_TOKEN="0987654321" \
-cc deploy \
+caps deploy \
 -function=hey \
 -revision=yellow \
 -downloadUrl=http://localhost:4999/demo/hey/0.0.0/hey.wasm
