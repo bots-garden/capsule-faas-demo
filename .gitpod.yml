@@ -3,7 +3,7 @@ image: k33g/capsule:0.0.1
 tasks:
   - name: initialize
     before: |
-      CAPSULE_VERSION="0.1.5"
+      CAPSULE_VERSION="0.1.6"
       echo "💊 Installing the capsule launcher..."
       wget https://github.com/bots-garden/capsule/releases/download/${CAPSULE_VERSION}/capsule-${CAPSULE_VERSION}-linux-amd64.tar.gz
       sudo tar -zxf capsule-${CAPSULE_VERSION}-linux-amd64.tar.gz --directory /usr/local/bin
@@ -25,9 +25,9 @@ tasks:
       rm capsule-worker-${CAPSULE_VERSION}-linux-amd64.tar.gz
 
       echo "💊 Installing capsule cli..."
-      wget https://github.com/bots-garden/capsule/releases/download/${CAPSULE_VERSION}/cc-${CAPSULE_VERSION}-linux-amd64.tar.gz
-      sudo tar -zxf cc-${CAPSULE_VERSION}-linux-amd64.tar.gz --directory /usr/local/bin
-      rm cc-${CAPSULE_VERSION}-linux-amd64.tar.gz
+      wget https://github.com/bots-garden/capsule/releases/download/${CAPSULE_VERSION}/caps-${CAPSULE_VERSION}-linux-amd64.tar.gz
+      sudo tar -zxf caps-${CAPSULE_VERSION}-linux-amd64.tar.gz --directory /usr/local/bin
+      rm caps-${CAPSULE_VERSION}-linux-amd64.tar.gz
     init: |
       echo "🚀 ..."
 
