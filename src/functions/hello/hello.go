@@ -9,7 +9,7 @@ func main() {
 	hf.SetHandleHttp(Handle)
 }
 
-func Handle(bodyReq string, headersReq map[string]string) (bodyResp string, headersResp map[string]string, errResp error) {
+func Handle(req hf.Request) (resp hf.Response, errResp error) {
 	message, _ := hf.GetEnv("MESSAGE")
 	token, _ := hf.GetEnv("TOKEN")
 	html := `
@@ -40,9 +40,9 @@ func Handle(bodyReq string, headersReq map[string]string) (bodyResp string, head
     </html>
     `
 
-	headersResp = map[string]string{
+	headers := map[string]string{
 		"Content-Type": "text/html; charset=utf-8",
 	}
 
-	return html, headersResp, nil
+	return hf.Response{Body: html, Headers: headers}, nil
 }
