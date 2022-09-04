@@ -3,7 +3,7 @@ image: k33g/capsule:0.0.1
 tasks:
   - name: initialize
     before: |
-      CAPSULE_VERSION="0.1.7"
+      CAPSULE_VERSION="0.1.9"
       echo "💊 Installing the capsule launcher..."
       wget https://github.com/bots-garden/capsule/releases/download/${CAPSULE_VERSION}/capsule-${CAPSULE_VERSION}-linux-amd64.tar.gz
       sudo tar -zxf capsule-${CAPSULE_VERSION}-linux-amd64.tar.gz --directory /usr/local/bin
