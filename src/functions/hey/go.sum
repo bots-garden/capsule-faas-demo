@@ -1,7 +1,7 @@
-github.com/bots-garden/capsule/capsulemodule v0.0.0-20220906154127-14697adccfbf h1:ohp4C4YLsRK39OAgZfbyk32hGg5t7vKPDo8ktNRqgCM=
-github.com/bots-garden/capsule/capsulemodule v0.0.0-20220906154127-14697adccfbf/go.mod h1:ZEJ4meqe9aHh4jCizKMqsmoVBx2T41O7tiwQOTphGuM=
-github.com/bots-garden/capsule/commons v0.0.0-20220906154127-14697adccfbf h1:glLYhQmLT9Sbbd5jSin5qefLfQ7uCoYb2PPdkAAYKrY=
-github.com/bots-garden/capsule/commons v0.0.0-20220906154127-14697adccfbf/go.mod h1:5ctHSZAwy3GEi4tR9YKFTfWtBUXDcOMFHNiJYXbV61c=
+github.com/bots-garden/capsule/capsulemodule v0.2.2 h1:8pXqt8NiQ0MvLD7Egq6e6F0y0fLqw5N6Z2XZsHodeWY=
+github.com/bots-garden/capsule/capsulemodule v0.2.2/go.mod h1:aKG7vvnt0kU6MPhAjPsBqQ3hymC5PF7CM0dV8azuaNE=
+github.com/bots-garden/capsule/commons v0.2.2 h1:iEaqUjpgDBFftDUPzDwijBVWX958kBmnovemJ96+2D0=
+github.com/bots-garden/capsule/commons v0.2.2/go.mod h1:0HTbbPcmopfxieSS1GXPXaWPqaphhN/E3wU94yynsr4=
 github.com/tidwall/gjson v1.14.2/go.mod h1:/wbyibRr2FHMks5tjHJ5F8dMZh3AcwJEMf5vlfC0lxk=
 github.com/tidwall/gjson v1.14.3 h1:9jvXn7olKEHU1S9vwoMGliaT8jq1vJ7IH/n9zD9Dnlw=
 github.com/tidwall/gjson v1.14.3/go.mod h1:/wbyibRr2FHMks5tjHJ5F8dMZh3AcwJEMf5vlfC0lxk=
